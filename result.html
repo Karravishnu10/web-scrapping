@@ -1,0 +1,52 @@
+<!-- result.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='result.css') }}">
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1>Text Summarizer Results</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box original-text">
+                    <p><strong>Original Text:</strong></p>
+                    <textarea class="form-control" rows="10" readonly>{{ article_text }}</textarea>
+                    <p><strong>Word Count in Original Text:</strong> {{ article_word_count }}</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="box summary-text">
+                    <p><strong>Generated Summary:</strong></p>
+                    <textarea class="form-control" rows="10" readonly>{{ generated_summary }}</textarea>
+                    <p><strong>Word Count in Generated Summary:</strong> {{ summary_word_count }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="back">
+                <a class="btn btn-primary" href="{{ url_for('index') }}">Back</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery if needed -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

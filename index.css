@@ -1,0 +1,61 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 100px;
+    display:flex;
+    justify-content:center;
+    align-items:top;
+    height: 80vh;
+    background-color: rgb(47, 217, 255);
+}
+
+.container {
+    
+    max-width: 2100px;
+    max-height: 90vh;
+    height:1500px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    background-color:yellow; /* Replace 'your_color_code' with the desired color code */
+}
+
+#app-heading {
+    text-align: center;
+    color: black;
+    
+    margin-bottom: 20px;
+    font-size: 3.5em; 
+    font-weight: bold;
+
+}
+
+#input-container {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 20px;
+}
+
+#url, #inputText {
+    width:100%;
+}
+
+#url-container, #summary-container {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+form {
+    margin-top: 10px;
+}
+
+textarea {
+    
+    justify-content: center;
+    display: flex;
+}

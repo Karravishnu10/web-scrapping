@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card mb-2">
+            <div class="card-body">
+                <h1 id="app-heading" class="card-title text-center">Text Summarizer</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- URL Input Container -->
+            <div class="col-md-7 mx-auto text-center">
+                <div id="url-container">
+                    <form action="/summarize" method="post">
+                        <p>Place the URL in the given space</p>
+                        <label for="url">Enter URL:</label>
+                        <input type="text" id="url" name="url" required>
+                        <br>
+                        <input type="submit" value="Summarize" class="btn btn-primary">
+                    </form>
+                </div>
+            </div>
+
+            <!-- Text Summarizer Container -->
+            <div class="col-md-7 mx-auto text-center">
+                <div id="summary-container">
+                    <form action="/summarize_text" method="post">
+                        <p>If you have text, please place it here</p>
+
+                        <!-- Centered label above the textarea -->
+                        <div class="form-group text-center">
+                            <label for="inputText">Input Text:</label>
+                            <textarea id="inputText" name="input_text" class="form-control" rows="10" required></textarea>
+                        </div>
+
+                        <!-- Centered button below the textarea -->
+                        <div class="form-group text-center">
+                            <input type="submit" value="Summarize" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+</body>
+</html>

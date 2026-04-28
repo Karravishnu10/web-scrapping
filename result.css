@@ -1,0 +1,84 @@
+/* result.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 100px;
+    display:flex;
+    justify-content:top;
+    align-items:top;
+    height: 100vh;
+    background-color: rgb(47, 217, 255);
+}
+
+
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+    font-size: 3em; /* Adjust the font size as needed */
+    font-weight: bold;
+
+}
+.back-button {
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 2100px;
+    max-height: 2000px;
+    height:400px;
+    padding: 5px;
+    margin-left: 20px;
+  
+}
+
+.box {
+    background-color: white;
+    max-width: 2000px;
+    height: 650px;
+    width:1000px;
+    max-height: 1000px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: px;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+textarea {
+    max-width: 2000px;
+    max-height: 1000px;
+    width: 800px;
+    color: aliceblue;
+    height: 800px;
+    
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 30px;
+    font-size: 1.6rem;
+}
+
+/* Additional styles for a more attractive appearance */
+.box p {
+    color: black;
+    line-height:1.6;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+
+
+
+
+.back a.btn-primary {
+    padding: 15px 30px;
+    font-size: 18px; 
+    width: 200px;
+    margin-top: 20px; 
+    font-size: 2rem ;
+    max-width: 1300px;
+    justify-content: center;
+    display: flex;
+}
+
