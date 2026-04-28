@@ -139,4 +139,4 @@ This project is open source. Feel free to use and modify it for your own learnin
 ## 👤 Author
 
 **Karravishnu10**  
-GitHub: [@Karravishnu10](https://github.com/Karravishnu10)give me ismilarly
+GitHub: [@Karravishnu10](https://github.com/Karravishnu10)
